@@ -5,5 +5,10 @@ from bs4 import BeautifulSoup
 def extract(url):
 	pass
 
-url = sys.argv[1]
-print("URL: " + url)
+urls = []
+
+for arg in sys.argv[1:]:
+	urls.append(arg)
+
+for url in urls:
+	print("URL: " + url)
